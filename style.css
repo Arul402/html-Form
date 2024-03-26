@@ -1,0 +1,149 @@
+body{
+    width: 100%;
+    background-color: aqua;
+    /* background-image: linear-gradient(to center, rgba(255, 255, 255, 0.4), rgba(0,0,0,0.4)); */
+}
+body:hover {
+    animation-name: background;
+    animation-duration: 2s; 
+}
+@keyframes background {
+    0% {
+        background-color: aqua;
+      }
+     25% {
+        background-color: #9A1663;
+      }
+      50% {
+        background-color: #E0144C;
+      }
+      75% {
+        background-color: #FF5858;
+      }
+      100% {
+        background-color: #FF97C1;
+      }
+}
+.container{
+    width: 30%;
+    background-color: rgb(238, 175, 175);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* top: 200px; */
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 100px;
+    /* display: block; */
+    border: 1px solid;
+    box-shadow: 5px 10px 5px 2px;
+    border-radius: 10%;
+}
+.container:hover{
+    animation-name: container;
+    animation-duration: 2s;
+}
+@keyframes container {
+    0% {
+        background-color: aqua;
+      }
+     25% {
+        background-color: #9A1663;
+      }
+      50% {
+        background-color: #E0144C;
+      }
+      75% {
+        background-color: #FF5858;
+      }
+      100% {
+        background-color: #FF97C1;
+      }
+}
+.imgdiv{
+  background-image: url("./images/hacker_4.jpg");
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid;
+
+}
+.child{
+    text-align: center;
+    color: blue;
+}
+form{
+    font-weight:  bold;
+    display: block;
+    margin: 10px;
+    position: relative;
+    /* text-align: center; */
+    color: blue;
+    
+}
+.form{
+    display: flex;
+    position: relative;
+    width: 50px;
+    top: 20px;
+
+    /* justify-content: center; */
+    left: 25%;
+}
+img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+h1{
+    margin: 0;
+}
+label{
+    float: left;
+    margin-bottom: 10px;
+    font-size:  1rem;
+    font-weight: bold;
+}
+input{
+    display: block;
+    position: relative;
+    margin: 10px;
+    left: 20px;
+    border-radius: 15%;
+    padding: 5px;
+    width: 150px;
+    border: 1px ;
+    box-shadow: 2.5px 5px 2.5px 5px rgb(158, 75, 75);
+}
+button{
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15%;
+    margin-bottom: 20px;
+}
+button:hover{
+  background-color:rgb(238, 175, 175);
+}
+
+@media (max-width:600px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  .form{
+    position: relative;
+    left: 20%;
+  }
+  .imgdiv{
+    width: 150px;
+    height: 150px;
+  }
+}
